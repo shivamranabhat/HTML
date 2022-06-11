@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.login{
+    padding: 25px;
+    background-color: bisque;
+    text-align: center;
+}
+legend{
+    text-align: center;
+}
+fieldset{
+    padding: 25px;
+}
+button{
+    background-color: rgb(0, 183, 255);
+    color:#fff;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+video{
+    border-radius: 30px;
+}

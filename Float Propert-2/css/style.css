@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/*Header design starts*/
+header{
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0;
+}
+/*Header design ends*/
+/*Navigation design starts*/
+.navigation-menu{
+    background-color: rgb(191, 144, 235);
+    list-style: none;
+}
+.navigation-menu ul{
+    padding: 20px;
+}
+.navigation-menu li{
+    display: inline;
+}
+.navigation-menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+.navigation-menu a:hover{
+    background-color: blueviolet;
+}
+/*Navigation design ends*/
+/*Info section design starts*/
+.test{
+    float: left;
+    background-color: rgb(200, 0, 255);
+    width: 70%;
+    padding: 30px;
+    height: 300px;
+}
+.info-section{
+    text-align: justify;
+    float: left;
+    padding: 15px;
+    background-color: rgb(171, 29, 253);
+    color: #fff;
+}
+.article{
+    float: left;
+    background-color: rgb(203, 160, 243);
+    padding: 17px;
+    color: #fff;
+}
+#paragraph{
+    background-color: black;
+    padding: 20px;
+}
+#paragraph:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Info section design ends*/
+/*Right section design starts*/
+.right{
+    float: left;
+    padding: 17px;
+    background-color: rgb(127, 8, 237);
+    width: 30%;
+    height: 300px;
+    color: #fff;
+}
+/*Right section design ends*/
+/*Footer design starts*/
+footer{
+    background-color: rgb(133, 3, 255);
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+}
+/*Footer design ends*/
+/*Responsive design starts*/
+
+@media(max-width:480px){
+   .test,.right{
+       width: 100%;
+       height: auto;
+   }
+   .navigation-menu li{
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+}
+@media(max-width:392px){
+    .phone, .mail a{
+        font-size: 5px;
+    }
+
+    
+ 
+ }

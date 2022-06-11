@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+/*Header design starts*/
+header{
+    background-color: rgb(186, 57, 10);
+    height: 50px;
+}
+.phone a{
+    color: #fff;
+    float: left;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.mail a{
+    color: #fff;
+    float: right;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.phone a:hover, .mail a:hover{
+    color: rgb(5, 255, 230);
+    transition: 0.5 ease-in;
+}
+/*Header design ends*/
+/*Navigation design starts*/
+.navigation-links{
+    background-color: rgb(255, 68, 0);
+    list-style: none;
+    position: sticky;
+    top:0;
+}
+.navigation-links ul{
+    padding: 30px;
+}
+.navigation-links li{
+    display: inline;
+}
+.navigation-links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navigation-links a:hover{
+    color: rgb(5, 255, 230);
+    transition: 0.5 ease-in;
+}
+.navigation-links a.active{
+    color: rgb(5, 255, 230);
+}
+/*Navigation design ends*/
+/*Introduction design starts*/
+.info-section h1{
+    float: left;
+    padding: 30px 30px 10px 10px;
+    font-size: 40px;
+}
+.paragraph{
+    float: left;
+    margin-right: 20px;
+}
+.paragraph p{
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 20px;
+}
+.info-section{
+    width: 50%;
+}
+#introduction{
+    padding: 20px;
+}
+#introduction::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.right{
+    width:50%;
+    float: left;
+    padding: 0 20px;
+}
+.right img{
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+}
+/*Introduction design ends*/
+/*Services design starts*/
+#services h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+#services .column{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+#services .column p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Services design ends*/
+/*Testimonials design starts*/
+#Testimonials{
+    margin: 80px 0;
+    padding: 30px 0;
+}
+#Testimonials h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+.image img{
+    float: left;
+    margin-left: 30px;
+    padding: 0 20px;
+}
+.para h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.para aside{
+    text-align: justify;
+    padding: 0 30px;
+}
+/*Testimonials design ends*/
+/*Qualifications design starts*/
+#qualification h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+}
+#qualification .column{
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+#qualification h2,p{
+    text-align: justify;
+}
+/*Qualifications design ends*/
+/*About design starts*/
+.about-info{
+    width: 50%;
+   float: left;
+    padding: 0 30px;
+}
+.about-info h1{
+    font-size: 40px;
+}
+.about-info p{
+    text-align: justify;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.about-right iframe{
+    margin-top: 10px;
+    padding-top: 5px;
+    width: 50%;
+    height: 500px;
+    background-size: contain;
+}
+/*About design ends*/
+/*Responsive design starts*/
+@media(max-width:1080px){
+    .info-section{
+        width: 100%;
+    }
+    .paragraph p{
+        padding-left: 20px;
+    }
+    .right{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .about-info{
+        width: 100%;
+    }
+    .about-right iframe{
+        width: 100%;
+        padding: 20px 10px;
+    }
+}
+@media(max-width:767px){
+    #services .row .column{
+        width:50%
+    }
+}
+@media(max-width:600px){
+    .phone, .mail a{
+        font-size: 13px;
+
+    }
+    .navigation-links{
+        height: 25vh;
+        background-color: orangered;
+    }
+    .navigation-links li{
+        display: block;
+        text-align: center;
+        padding: 0 0 10px 0;
+    }
+
+    .para h2{
+        padding-left: 30px;
+    }
+    #qualification .column{
+        width: 45%;
+    }
+    #services .row .column{
+        width:100%
+    }
+    #qualification .row .column{
+        width:100%
+    }
+}
+@media(max-width:484px){
+    .phone, .mail a{
+        font-size: 10px;
+    }
+}
+@media(max-width:390px){
+    .phone, .mail a{
+        font-size: 9px;
+    }
+}
+/*Responsive design ends*/
